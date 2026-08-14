@@ -1,0 +1,19 @@
+{$CADDY_SITE_ADDRESS} {
+    root * /srv/frontend/dist
+    encode gzip zstd
+
+    handle /api/* {
+        reverse_proxy backend:8000
+    }
+
+    handle /app* {
+        header Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        try_files {path} /index.html
+        file_server
+    }
+
+    handle {
+        try_files {path} /index.html
+        file_server
+    }
+}
