@@ -4,8 +4,6 @@
 
 Telegram-магазин с ботом, административной панелью, каналом товаров и мобильным Mini App. Система рассчитана на каталог электронных сигарет и сопутствующих товаров, но может быть адаптирована под другой магазин.
 
-![Vape bazar Store Manager](assets/readme/hero.png)
-
 ## Русский
 
 ### Возможности
@@ -198,8 +196,6 @@ docker compose run --rm migrate
 - закрепите версии зависимостей и базовых образов;
 - настройте автоматические дампы PostgreSQL и мониторинг.
 
-Подробный контекст для следующего разработчика или AI находится в [`docs/README_AI_HANDOFF.md`](docs/README_AI_HANDOFF.md).
-
 ---
 
 ## English
@@ -302,5 +298,3 @@ Create and verify a PostgreSQL backup before every update. Store backups outside
 - run application containers as non-root users;
 - pin dependencies and base image versions;
 - automate PostgreSQL backups and monitoring.
-
-See [`docs/README_AI_HANDOFF.md`](docs/README_AI_HANDOFF.md) for the full bilingual engineering handoff.
